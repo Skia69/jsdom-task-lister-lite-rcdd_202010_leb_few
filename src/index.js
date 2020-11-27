@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const renderHTML = () => { 
     const todo = `<li>
-                    ${todoInput.value} <button action="delete">x</button>
+                    ${todoInput.value} <button class="delete">x</button>
                   </li>
                   `
     todoList.insertAdjacentHTML('afterbegin', todo)
@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
   const deleteTodo = e => {
-    if(e.target.att)
+    const element = e.target
+    if(element.classList.contains('delete')){
+      element.parentElement.remove()
+    }
   }
   
   form.addEventListener('submit', e => e.preventDefault())
