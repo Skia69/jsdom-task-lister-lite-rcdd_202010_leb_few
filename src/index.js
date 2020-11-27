@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitButton = document.querySelector("input[type='submit']")
   const todoList = document.querySelector("#tasks")
   
-  let todos = []
   
   const addTodo = e => { 
     e.preventDefault()
