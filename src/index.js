@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const todoList = document.querySelector("#tasks")
   
   
+  const renderHTML = () => { 
+    const todo = `<li>
+    `
+  }
+  
   const addTodo = e => { 
     e.preventDefault()
     todoList.insertAdjacentHTML('afterbegin', todoInput.value)
