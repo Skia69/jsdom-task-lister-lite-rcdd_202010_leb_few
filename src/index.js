@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const addTodo = e => { 
     e.preventDefault()
-    todoList.insertAdjacentHtml todoInput.value
+    todoList.insertAdjacentHTML('afterbegin', todoInput.value)
   } 
   
   
