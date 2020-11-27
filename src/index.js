@@ -11,12 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     ${todoInput.value} <button>x</button>
                   </li>
                   `
+    todoList.insertAdjacentHTML('afterbegin', todo)
   }
   
   const addTodo = e => { 
     e.preventDefault()
     renderHTML()
-    todoList.insertAdjacentHTML('afterbegin', todoInput.value)
+    form.reset()
   } 
   
   
