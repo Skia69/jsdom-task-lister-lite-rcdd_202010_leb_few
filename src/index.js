@@ -8,11 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const renderHTML = () => { 
     const todo = `<li>
-    `
+                    ${todoInput.value} <button>x</button>
+                  </li>
+                  `
   }
   
   const addTodo = e => { 
     e.preventDefault()
+    renderHTML()
     todoList.insertAdjacentHTML('afterbegin', todoInput.value)
   } 
   
