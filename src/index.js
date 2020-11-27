@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const addTodo = e => { 
     e.preventDefault()
-    if(todoInput.value){
+    if(todoInput.value.trim()){
         renderHTML()
         form.reset()
     }
