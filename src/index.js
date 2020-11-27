@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const renderHTML = () => { 
     const todo = `<li>
-                    ${todoInput.value} <button delete-todo>x</button>
+                    ${todoInput.value} <button action="delete">x</button>
                   </li>
                   `
     todoList.insertAdjacentHTML('afterbegin', todo)
