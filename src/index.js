@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const addTodo = e => { 
     e.preventDefault()
-    todos.push(todoInput.value)
+    todoInput.value
   } 
   
   submitButton.addEventListener('click', addTodo)
